@@ -19,7 +19,15 @@ There are two main scripts in this repository, each tailored for specific parts 
   Filename: Spike_Train_Analysis.py
   
   Description:
-  This script is dedicated to the analysis of spike trains in cells stimulated with Carbachol (CCh). It is designed to perform a detailed statistical analysis of the spike trains to understand the underlying mechanisms and behaviors.
+  This script is dedicated to the analysis of spike trains in cells stimulated with Carbachol (CCh). It is designed to perform a detailed statistical analysis of the spike trains to understand the underlying mechanisms and behaviours. 
+  Make sure to run the files:
+  
+  - libraries.py,
+  - datetime_setup.py
+  - functions.py 
+  
+  before running the main script. 
+  In datetime_setup, you can call the file by specifying the date and experiment number (an example file name is 20170815E1). 
   
   Tasks:
   - Detrending Time Series Data: Removes the deterministic contributions from the Interspike Interval (ISI) and amplitude data, preparing it for unbiased statistical analysis.
