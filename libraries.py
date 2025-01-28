@@ -18,5 +18,4 @@ from scipy.stats import (
 )  # Importing pearsonr from scipy.stats to calculate the Pearson correlation coefficient
 import os  # Importing os for interacting with the operating system
 
-# In libraries.py
-print("plt available in libraries:", plt)
+
