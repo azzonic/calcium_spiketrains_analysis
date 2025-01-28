@@ -28,9 +28,6 @@ df_tf = detrend_column_grouped(df, "time (s)", "ISI (s)", "tISI")
 df_tf = detrend_column_grouped(df_tf, "time (s)", "A (DF/F0)", "tA")
 df_tf = format_detrended_columns(df_tf)
 
-# Continue processing...
-df = df_tf
-
 # Ensure that 'ST' and 'stimulus' columns are integers
 df_tf["ST"] = df_tf["ST"].astype(int)
 df_tf["stimulus"] = df_tf["stimulus"].astype(int)
@@ -144,8 +141,10 @@ file_name_col = df_final.pop("FileName")  # Remove the column temporarily
 df_final.insert(0, "FileName", file_name_col)  # Insert it at the first position
 
 # Define the save path
-save_path = rf"C:\Users\azzonic\Desktop\PhD_Falcke\experiments\Ca2imag_CalB_CCh_HEK\ISI\PyCaSig_analysis/{folder_name}/{file_name}"
+save_path = rf"yourpath/{folder_name}/{file_name}" # change the path
 
+
+#From here, just additional commands for a specific file format. 
 # Save paths for both versions of the file
 file_with_filename_path = save_path + "_with_filename.txt"
 file_without_filename_path = save_path + "_without_filename.txt"
@@ -168,6 +167,5 @@ df_without_filename["spikes"] = df_without_filename["spikes"].apply(
 # Save the second file without the 'FileName' column
 save_dataframe_with_header_and_format(df_without_filename, file_without_filename_path)
 
-# Optionally, print confirmation
 print(f"File with 'FileName' saved to: {file_with_filename_path}")
 print(f"File without 'FileName' saved to: {file_without_filename_path}")
