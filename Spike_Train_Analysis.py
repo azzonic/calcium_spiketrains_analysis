@@ -130,6 +130,13 @@ df_final["ST"] = df_final["ST"].astype(int)
 df_final["stimulus"] = df_final["stimulus"].astype(int)
 df_final["spikes"] = df_final["spikes"].astype(int)
 
+
+""" 
+From here the script creates the results file with a specific format and shape. 
+Stop here if you don't need it. If needed, change the paths.
+"""
+
+
 # Create the 'FileName' column based on the ST and stimulus values
 df_final["FileName"] = df_final.apply(
     lambda row: f"{folder_name}/{file_name}_ST{int(row['ST'])}_CCh{int(row['stimulus'])}.txt",
