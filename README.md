@@ -1,25 +1,11 @@
-# Spike Trace Analysis
-This repository contains analytical tools designed for processing and analyzing spike traces extracted from time-lapses of cells loaded with Calbryte 520AM dye and stimulated with Carbachol.
+# Spiking Analysis
+This repository contains analytical tools designed for processing and analyzing spikes in HEK cells.
 
-## Contents
-There are two main scripts in this repository, each tailored for specific parts of the data analysis workflow:
-
-### 1. Jupyter Notebook: for Baseline Correction and Normalization
-  Filename: `Baseline_Correction_and_Normalization.ipynb`
-  
-  Description:
-  The Jupyter Notebook is used for preprocessing spike trace data obtained from time-lapse imaging. The notebook utilizes the Peakutils package to perform baseline correction through polynomial fitting. Following baseline correction, the notebook processes the fluorescence intensities of cells to normalize them.
-  
-  Tasks:
-  - Baseline correction using polynomial fitting.
-  - Normalization (deltaF/F0) of fluorescence intensities.
-
-
-### 2. Python Script: Spike Train Analysis
+## Spike Train Analysis
   Filename: `Spike_Train_Analysis.py`
   
   Description:
-  This script is dedicated to the analysis of spike trains in cells stimulated with Carbachol (CCh). It is designed to perform a detailed statistical analysis of the spike trains to understand the underlying mechanisms and behaviours. 
+  This script is dedicated to the analysis of spikes from sequences in HEK cells stimulated with Carbachol (CCh). It is designed to perform a detailed statistical analysis of the spikes to understand the underlying   mechanisms and behaviours. 
   Make sure to run the files:
   
   - `libraries.py`
