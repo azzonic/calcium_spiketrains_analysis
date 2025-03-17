@@ -28,4 +28,4 @@ Python 3.x
 Jupyter Notebook or JupyterLab
 Necessary Python packages: numpy, scipy, matplotlib, pandas, peakutils
 
-
+Use the example file named "20240808E1" to try the script. Instert the correct data from the file name in datetime file.  
