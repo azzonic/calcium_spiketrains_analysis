@@ -28,7 +28,4 @@ Python 3.x
 Jupyter Notebook or JupyterLab
 Necessary Python packages: numpy, scipy, matplotlib, pandas, peakutils
 
-To use these scripts:
-Clone this repository to your local machine.
-Open the Jupyter Notebook Baseline_Correction_and_Normalization.ipynb in JupyterLab, Jupyter Notebook or Visual Studio to perform the baseline correction and normalization.
-Run the Spike_Train_Analysis.py script in a Python environment to carry out the detailed spike train analysis.
+
