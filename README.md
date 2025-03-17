@@ -5,7 +5,7 @@ This repository contains analytical tools designed for processing and analyzing 
   Filename: `Spike_Train_Analysis.py`
   
   Description:
-  This script is dedicated to the analysis of spikes from sequences in HEK cells stimulated with Carbachol (CCh). It is designed to perform a detailed statistical analysis of the spikes to understand the underlying   mechanisms and behaviours. 
+  This script is dedicated to the analysis of spikes from sequences in HEK cells stimulated with Carbachol (CCh). It is designed to perform a detailed statistical analysis of the spikes to understand the underlying   mechanisms and behaviours. The input files are .csv files structured as the file `20240808E1.csv`. These files have been obtained by analysing confocal time-lapses with `PyCaSig` GUI (find it @ `https://github.com/nicouh/PyCaSig`). 
   Make sure to run the files:
   
   - `libraries.py`
@@ -26,6 +26,6 @@ To run these scripts, you will need an environment capable of executing Python c
 
 Python 3.x
 Jupyter Notebook or JupyterLab
-Necessary Python packages: numpy, scipy, matplotlib, pandas, peakutils
+Necessary Python packages: `numpy`, `scipy`, `matplotlib`, `pandas`.
 
-Use the example file named "20240808E1" to try the script. Instert the correct data from the file name in datetime file.  
+Use the example file named `20240808E1.csv` to try the script. Insert the correct data from the file name in `datetime_setup.py` file.  
