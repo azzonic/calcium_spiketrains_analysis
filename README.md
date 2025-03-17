@@ -13,7 +13,7 @@ This repository contains analytical tools designed for processing and analyzing 
   - `functions.py` 
   
   before running the main script. 
-  In `datetime_setup.py`, you can call the file by specifying the date and experiment number (an example file name is 20170815E1). 
+  In `datetime_setup.py`, you can call the file by specifying the date and experiment number (an example file name is 20240808E1). 
   
   Tasks:
   - Detrending Time Series Data: Removes the deterministic contributions from the Interspike Interval (ISI) and amplitude data, preparing it for unbiased statistical analysis.
